@@ -4,6 +4,7 @@ import java.util.List;
 
 class Vicious implements Equipment {
     private int attackCounter = 0;
+
     @Override
     public int defensePower(int dmg, List<Equipment> equipmentList) {
         return dmg;

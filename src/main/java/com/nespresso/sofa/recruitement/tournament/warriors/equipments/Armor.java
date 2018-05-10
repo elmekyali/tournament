@@ -10,6 +10,6 @@ class Armor implements Equipment {
 
     @Override
     public int attackPower() {
-        return - 1;
+        return -1;
     }
 }

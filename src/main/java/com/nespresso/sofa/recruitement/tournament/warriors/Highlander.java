@@ -25,7 +25,7 @@ public class Highlander extends Warrior {
 
     @Override
     int damage() {
-        if(isVeteran && hitPoints() < INITIAL_HEALTH * PERCENTAGE_TO_DOUBLE_DAMAGE)
+        if (isVeteran && hitPoints() < INITIAL_HEALTH * PERCENTAGE_TO_DOUBLE_DAMAGE)
             return equipments.stream().mapToInt(Equipment::attackPower).sum() * 2;
         return equipments.stream().mapToInt(Equipment::attackPower).sum();
     }

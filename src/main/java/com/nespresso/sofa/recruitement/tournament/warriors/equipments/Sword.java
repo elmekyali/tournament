@@ -4,6 +4,7 @@ import java.util.List;
 
 class Sword implements Equipment {
     private static final int DEFAULT_DAMAGE = 5;
+
     @Override
     public int defensePower(int damage, List<Equipment> equipmentList) {
         return damage;
